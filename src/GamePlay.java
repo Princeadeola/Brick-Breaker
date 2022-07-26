@@ -1,18 +1,11 @@
-
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import javax.swing.Timer;
 
-import javax.swing.JPanel;
-
-public class GamePlay extends JPanel implements KeyListener, ActionListener  {
+public class GamePlay extends JPanel implements KeyListener, ActionListener {
     private boolean play = false;
     private int score = 0;
 
@@ -37,9 +30,6 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener  {
         setFocusTraversalKeysEnabled(false);
         timer = new Timer(delay, this);
         timer.start();
-
-
-
     }
     public void paint(Graphics g) {
 
