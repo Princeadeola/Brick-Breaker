@@ -1,17 +1,19 @@
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class Main {
+
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
+        JFrame obj = new JFrame();
         GamePlay gamePlay = new GamePlay();
 
-        frame.setBounds(10,10,700,600);
-        frame.setTitle("Brick Breaker");
-        frame.setResizable(false);
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocationRelativeTo(null);
+        obj.setBounds(10, 10, 700, 600);
+        obj.setTitle("Brick Breaker");
+        obj.setResizable(false);
+        obj.setVisible(true);
+        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        obj.setLocationRelativeTo(null);
+        obj.add(gamePlay);
 
-        frame.add(gamePlay);
     }
+
 }
